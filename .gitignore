@@ -1,0 +1,17 @@
+*.o
+*.a
+*.s
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.cmd
+.*.cmd
+*.tmp
+modules.order
+Module.symvers
+System.map
+vmlinux
+vmlinux.o
+vmlinux.a
+.vscode/
