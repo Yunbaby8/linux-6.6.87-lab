@@ -875,6 +875,7 @@ static void __init print_unknown_bootoptions(void)
 asmlinkage __visible __init __no_sanitize_address __noreturn __no_stack_protector
 void start_kernel(void)
 {
+	 printk(KERN_INFO "YUNHE_PRINTK_TEST_1: start_kernel reached\n");
 	char *command_line;
 	char *after_dashes;
 
