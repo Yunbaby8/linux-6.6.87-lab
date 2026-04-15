@@ -1,17 +1,14 @@
+# temporary vmlinux/kallsyms files
+.tmp_vmlinux*
+.vmlinux*
+
+# common kernel build outputs
 *.o
 *.a
-*.s
+*.so
 *.ko
 *.mod
 *.mod.c
-*.mod.o
 *.cmd
-.*.cmd
+*.d
 *.tmp
-modules.order
-Module.symvers
-System.map
-vmlinux
-vmlinux.o
-vmlinux.a
-.vscode/
