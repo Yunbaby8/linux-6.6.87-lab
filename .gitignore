@@ -1,14 +1,60 @@
-# temporary vmlinux/kallsyms files
-.tmp_vmlinux*
-.vmlinux*
-
-# common kernel build outputs
+# Kernel build outputs
 *.o
 *.a
-*.so
+*.s
 *.ko
+*.so
 *.mod
 *.mod.c
+*.mod.o
 *.cmd
-*.d
-*.tmp
+.*.cmd
+.config.old
+
+# Top-level build outputs
+.version
+Module.symvers
+System.map
+vmlinux
+vmlinux.map
+modules.order
+modules.builtin
+modules.builtin.modinfo
+
+# Generated config/header files
+include/config/auto.conf
+include/config/auto.conf.cmd
+include/config/kernel.release
+include/generated/autoconf.h
+include/generated/autoconf.h.cmd
+include/generated/compile.h
+include/generated/rustc_cfg
+include/generated/utsrelease.h
+include/generated/utsversion.h
+
+# Generated config feature markers
+include/config/CC_HAS_*
+include/config/INIT_STACK_ALL_ZERO
+include/config/INIT_STACK_NONE
+include/config/INIT_ON_ALLOC_DEFAULT_ON
+include/config/INIT_ON_FREE_DEFAULT_ON
+
+# Common build directories/files
+.tmp_versions/
+*.symtypes
+*.lst
+*.su
+*.pyc
+*.pyo
+*.dtb
+*.dtbo
+*.dwo
+*.gcno
+*.gcda
+*.gcov
+
+# Editor / temp
+*.swp
+*.swo
+*~
+.vscode/
